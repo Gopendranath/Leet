@@ -3,11 +3,9 @@
  * @return {number[]}
  */
 var rearrangeArray = function(nums) {
-
     if (nums.length <= 2){
         return nums.sort((a,b) => (b - a))
     }
-
     let allNeg = nums.filter((elm) => elm < 0)
     let negC = 0
     let allPos = nums.filter((elm) => elm > 0)
